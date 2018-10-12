@@ -1,7 +1,7 @@
 function sequence (val) {
   return {
     pipe: function (fn) {
-      return Sequence(fn(val))
+      return sequence(fn(val))
     }
   }
 }
