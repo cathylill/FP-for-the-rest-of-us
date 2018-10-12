@@ -1,4 +1,4 @@
-function pipe () {
+function compose () {
   let fns = Array.from(arguments);
   // create an array of all the functions we want to pipe.
 
@@ -21,5 +21,5 @@ function pipe () {
 }
 
 // Handles the arity > 1 function more elegantly than sequence / chaining
-// pipe 'caches' the functions we want to compose using a closure and returns
-// a new function that accepts the arity > 1 functions args.
+// compose 'caches' the functions we want to compose using a closure and returns
+// returns a new function that accepts the arity > 1 functions args.
