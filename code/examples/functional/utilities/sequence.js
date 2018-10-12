@@ -1,4 +1,4 @@
-function Sequence (val) {
+function sequence (val) {
   return {
     pipe: function (fn) {
       return Sequence(fn(val))
